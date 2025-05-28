@@ -40,7 +40,7 @@ else {
 
 
 
-// second Method
+// 2. second Method
 
 // let a = parseFloat(prompt("enter your 1st number :")) 
 // let ops = prompt("enter your operation + - * / :")
