@@ -16,4 +16,4 @@ arr[0] = 5421
 let a1 = [1,2,3]
 let a2 = [4,5,6]
 let a3 = [9,8,7]
-console.log(a1.concat(a3))
+console.log(a1.concat(a1,a3))
