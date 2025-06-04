@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card {
+        display: flex;
+        border: 2px solid black;
+        width: 850px;
+        justify-content: center;
+        align-items:center;
+        background-color: rgb(39, 38, 37);
+        margin: 5px;
+
+    }
+
+    .text h1,
+    p {
+        padding: 2px 0;
+        color: aliceblue;
+    }
+
+    .image {
+        position: relative;
+        /* align-items: center; */
+        border-radius: 5%;
+
+    }
+    .capsule{
+    position: absolute;
+    justify-content: right;
+    bottom: 8px;
+    z-index: 10;
+    right: 5px;
+    background: black;
+    opacity: 0.7;
+    color: white;
+    padding: 3px;
+    border-radius: 4px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+               <div class="image">
+                   <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw" alt="">
+                   <div class="capsule">30:06</div>
+               </div>
+               <div class="text">
+                   <h1>Introduction to Backend | Web Dev video #2 </h1>
+                   <p>CodeWithHarry.  727K.  2 months ago</p>
+                </div>
+        </div>
+
+    </div>
+    <script src="Ex_13_script.js"></script>
+</body>
+
+</html>
