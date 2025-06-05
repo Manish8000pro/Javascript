@@ -55,13 +55,13 @@
             let val3 = Math.ceil(0 + Math.random() * 255);
             return `rgb(${val1}, ${val2}, ${val3})`
         }
-        // setInterval(() => {
-        //     document.querySelector(".childcontainer").style.background = getRandomColor()
-        // }, 200);
-
-        setTimeout(() => {
+        setInterval(() => {
             document.querySelector(".childcontainer").style.background = getRandomColor()
-        }, 5000);
+        }, 200);
+
+        // setTimeout(() => {
+        //     document.querySelector(".childcontainer").style.background = getRandomColor()
+        // }, 5000);
     </script>
 </body>
 
