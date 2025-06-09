@@ -32,21 +32,21 @@
                 timeout = 1 + 6 * Math.random()
                 setTimeout(() => {
                     resolve()
-                }, timeout * 800);
+                }, timeout * 700);
             })
         }
 
         async function main() {
-            setInterval(() => {
+            let t = setInterval(() => {
                 let last = document.body.getElementsByTagName("div");
-                last = last[last.length-1]
-                if(last.innerHTML.endsWith("...")){
-                    last.innerHTML = last.innerHTML.slice(0,last.innerHTML.length-3)
+                last = last[last.length - 1]
+                if (last.innerHTML.endsWith("...")) {
+                    last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3)
                 }
-                else{
+                else {
                     last.innerHTML = last.innerHTML + "."
                 }
-            }, 700);
+            }, 100);
 
 
 
@@ -59,6 +59,8 @@
             for (const item of text) {
                 await addItem(item)
             }
+            await randomDealy()
+            clearInterval(t)
         }
         main()
     </script>
